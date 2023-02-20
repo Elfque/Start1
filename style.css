@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css2?family=Alice&family=Great+Vibes&display=swap");
+body {
+  background-color: rgba(174, 213, 229, 0.409);
+  overflow-x: hidden;
+  font-family: "Alice", serif;
+}
+.svg {
+  width: 100vw;
+  position: fixed;
+  z-index: -1;
+  top: 25vh;
+  opacity: 0.2;
+}
+.text {
+  color: rgb(64, 55, 55);
+}
+.donate {
+  color: rgb(71, 70, 70);
+}
+.aim {
+  margin: 2rem 3rem;
+  text-align: center;
+  font-size: 2.3rem;
+  color: rgb(62, 62, 62);
+  font-family: "Great Vibes", cursive;
+  font-weight: 900;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  margin: auto;
+  padding: 1rem;
+  align-items: center;
+}
+.logo {
+  font-weight: 700;
+  font-size: 1.2rem;
+  width: fit-content;
+  text-align: center;
+}
+.logo img {
+  height: 2.5rem;
+  width: 40vh;
+}
+nav > *:nth-child(2) {
+  justify-self: center;
+  display: flex;
+  gap: 1rem;
+}
+.qter {
+  margin: 0.8rem;
+  color: rgb(196, 119, 88);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+nav > *:nth-child(3) {
+  justify-self: right;
+}
+.opt {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.main_opt::after {
+  content: "";
+  display: block;
+  background-color: black;
+  height: 2px;
+  bottom: 1rem;
+  left: 0;
+  width: 0;
+  transition: all 1s;
+}
+.main_opt:hover {
+  cursor: pointer;
+  color: rgb(71, 70, 70);
+}
+.main_opt:hover::after {
+  width: 100%;
+}
+.opener {
+  display: none;
+}
+
+/* HEADER */
+.head {
+  max-width: 40rem;
+  text-align: center;
+  margin: 1rem auto;
+}
+.head .head_text {
+  font-size: 2.6rem;
+  margin-bottom: 1rem;
+}
+.head button {
+  background-color: black;
+  padding: 0.7rem 2rem;
+  color: #fafafa;
+  border-radius: 2rem;
+  margin: 1rem;
+}
+.head img {
+  width: 1rem;
+}
+.head .tog {
+  color: rgb(196, 119, 88);
+}
+
+/* BOXES */
+.box_text {
+  text-align: center;
+  font-size: 1.2rem;
+  width: 90%;
+  margin: 1rem auto;
+  gap: 8%;
+}
+.box {
+  width: 100%;
+  height: 17rem;
+  border-radius: 8px;
+  border: 1px solid rgb(188, 81, 185);
+  padding: 0.3rem;
+}
+.search {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  margin: 3rem auto;
+  width: 80%;
+  gap: 4rem;
+}
+
+/* ABOUT */
+.about_us {
+  color: rgb(101, 63, 14);
+  margin-bottom: 7rem;
+  position: relative;
+}
+.title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.main_about {
+  width: 90%;
+  margin: 1rem auto;
+  text-align: center;
+}
+.bit_gift {
+  position: absolute;
+  top: -50%;
+  left: 0;
+  z-index: -1;
+  opacity: 0.4;
+  width: 100vw;
+  height: 300%;
+  bottom: 0;
+  object-fit: cover;
+}
+
+/* DONATE */
+.donate_btn {
+  background-color: rgb(0, 0, 0);
+  border: none;
+  padding: 0.7rem 1.6rem;
+  border-radius: 1.5rem;
+  font-size: 1.1rem;
+  color: white;
+  margin: 1rem auto;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.dbtn {
+  text-align: center;
+}
+.dbtn img {
+  width: 1.5rem;
+}
+
+/* CAROUSEL */
+.carousel {
+  width: 100%;
+  height: 17rem;
+  overflow: hidden;
+}
+
+.carou {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.carou .cars {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  transition: 0.5s;
+}
+.carou img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+.overlay {
+  position: absolute;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(234, 254, 210);
+  text-align: center;
+  font-weight: 900;
+  font-size: 1.4rem;
+}
+
+/* MEDIA */
+/* PROJECTS */
+@media (max-width: 769px) {
+  .search {
+    display: flex;
+    text-align: center;
+  }
+  .a .search {
+    flex-direction: column-reverse;
+  }
+  .b .search {
+    flex-direction: column;
+  }
+}
+
+/* HEAD */
+@media (max-width: 375px) {
+  .opt {
+    position: absolute;
+    /* display: none; */
+  }
+  .head_text {
+    font-size: 2rem !important;
+  }
+  .aim {
+    width: 90%;
+    font-size: 1rem;
+    margin: 1rem auto;
+  }
+}
+
+/* NAV */
+@media (max-width: 765px) {
+  nav {
+    width: 95%;
+    margin: auto;
+    padding: 0.5rem;
+    align-items: center;
+    position: relative;
+  }
+  .logo {
+    text-align: center;
+  }
+  .logo_text {
+    display: none;
+  }
+  .logo img {
+    height: 2.5rem;
+    width: 13vh;
+  }
+  .opener {
+    display: inline;
+    background-color: transparent;
+    border: 1px solid black;
+  }
+  .opener img {
+    width: 2rem;
+  }
+  nav > *:nth-child(2) {
+    display: block;
+    position: fixed;
+    top: 3.7rem;
+    height: fit-content;
+    width: fit-content;
+    padding: 1rem;
+    background-color: white;
+    right: 2rem;
+  }
+  .opt.hidden {
+    display: none;
+  }
+}
