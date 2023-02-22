@@ -2,12 +2,14 @@ const mainOpt = document.querySelectorAll(".main_opt");
 const times = document.querySelector(".opener");
 const opt = document.querySelector(".opt");
 const closer = document.querySelector(".times");
+const overl = document.querySelector(".overl");
 
-// AOS.init({ duration: 1500 });
+AOS.init({ duration: 1500 });
 
 mainOpt.forEach((each) => {
   each.addEventListener("click", () => {
     opt.classList.add("hidden");
+    overl.classList.add("hidden");
     document
       .querySelector(`#${each.dataset.dest}`)
       .scrollIntoView({ behavior: "smooth" });
@@ -41,12 +43,20 @@ caroImages.forEach((caro) => {
 
 times.addEventListener("click", () => {
   opt.classList.toggle("hidden");
+  overl.classList.toggle("hidden");
 });
 
 times.addEventListener("blur", () => {
   opt.classList.add("hidden");
+  overl.classList.add("hidden");
 });
 
 closer.addEventListener("click", () => {
   opt.classList.add("hidden");
+  overl.classList.add("hidden");
+});
+
+overl.addEventListener("click", () => {
+  opt.classList.add("hidden");
+  overl.classList.add("hidden");
 });
