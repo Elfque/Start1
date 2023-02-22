@@ -1,11 +1,13 @@
 const mainOpt = document.querySelectorAll(".main_opt");
 const times = document.querySelector(".opener");
 const opt = document.querySelector(".opt");
+const closer = document.querySelector(".times");
 
 // AOS.init({ duration: 1500 });
 
 mainOpt.forEach((each) => {
   each.addEventListener("click", () => {
+    opt.classList.add("hidden");
     document
       .querySelector(`#${each.dataset.dest}`)
       .scrollIntoView({ behavior: "smooth" });
@@ -42,5 +44,9 @@ times.addEventListener("click", () => {
 });
 
 times.addEventListener("blur", () => {
+  opt.classList.add("hidden");
+});
+
+closer.addEventListener("click", () => {
   opt.classList.add("hidden");
 });
