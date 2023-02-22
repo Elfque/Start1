@@ -2,7 +2,7 @@ const mainOpt = document.querySelectorAll(".main_opt");
 const times = document.querySelector(".opener");
 const opt = document.querySelector(".opt");
 
-AOS.init({ duration: 1500 });
+// AOS.init({ duration: 1500 });
 
 mainOpt.forEach((each) => {
   each.addEventListener("click", () => {
@@ -39,10 +39,8 @@ caroImages.forEach((caro) => {
 
 times.addEventListener("click", () => {
   opt.classList.toggle("hidden");
+});
 
-  // if (times.innerHTML == "<img src='./img/menu.svg' alt='' />") {
-  //   times.innerHTML = "<img src='./img/times.svg' alt='' />";
-  // } else {
-  //   times.innerHTML = "<img src='./img/menu.svg' alt='' />";
-  // }
+times.addEventListener("blur", () => {
+  opt.classList.add("hidden");
 });
