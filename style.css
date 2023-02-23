@@ -123,6 +123,10 @@ nav > *:nth-child(3) {
 .head .tog {
   color: rgb(196, 119, 88);
 }
+a {
+  color: inherit;
+  text-decoration: none;
+}
 
 /* BOXES */
 .box_text {
