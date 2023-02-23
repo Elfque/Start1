@@ -101,6 +101,5 @@ button {
   }
   header {
     grid-template-columns: 3fr 6fr;
-    /* gap: 1rem; */
   }
 }
