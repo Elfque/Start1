@@ -1,14 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Alice&family=Great+Vibes&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@500;600;700;800;900&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: inherit;
 }
 body {
   background-color: rgba(174, 213, 229, 0.409);
   overflow-x: hidden;
-  /* font-family: "Alice", serif; */
-  font-family: Lexend deca;
+  font-family: "Lexend Deca", sans-serif;
 }
 .bav {
   background-color: rgb(41, 230, 255);

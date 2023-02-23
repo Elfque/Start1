@@ -6,10 +6,14 @@ const overl = document.querySelector(".overl");
 
 AOS.init({ duration: 1500 });
 
+const navOpen = () => {
+  opt.classList.add("hidden");
+  overl.classList.add("hidden");
+};
+
 mainOpt.forEach((each) => {
   each.addEventListener("click", () => {
-    opt.classList.add("hidden");
-    overl.classList.add("hidden");
+    navOpen();
     document
       .querySelector(`#${each.dataset.dest}`)
       .scrollIntoView({ behavior: "smooth" });
@@ -46,17 +50,8 @@ times.addEventListener("click", () => {
   overl.classList.toggle("hidden");
 });
 
-times.addEventListener("blur", () => {
-  opt.classList.add("hidden");
-  overl.classList.add("hidden");
-});
+times.addEventListener("blur", navOpen);
 
-closer.addEventListener("click", () => {
-  opt.classList.add("hidden");
-  overl.classList.add("hidden");
-});
+closer.addEventListener("click", navOpen);
 
-overl.addEventListener("click", () => {
-  opt.classList.add("hidden");
-  overl.classList.add("hidden");
-});
+overl.addEventListener("click", navOpen);
