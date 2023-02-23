@@ -12,11 +12,14 @@ body {
   font-family: "Lexend Deca", sans-serif;
 }
 .bav {
-  background-color: rgb(41, 230, 255);
-  /* background-color: rgb(196, 119, 88); */
+  /* background-color: rgb(41, 230, 255); */
+  background-color: #99e9ff;
   position: sticky;
   z-index: 1;
   top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
 }
 .svg {
   width: 100vw;
