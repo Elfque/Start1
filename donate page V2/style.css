@@ -165,7 +165,7 @@ select {
 }
 .send {
   display: flex;
-  justify-content: end;
+  justify-content: center;
   gap: 1rem;
 }
 .send button {
