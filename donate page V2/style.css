@@ -209,7 +209,7 @@ select {
   background-color: white;
   height: 40%;
   width: 8rem;
-  margin: 1rem auto;
+  margin: 0.5rem auto;
 }
 .custom_modal {
   height: fit-content;
