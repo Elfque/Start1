@@ -116,13 +116,13 @@ button:hover {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  /* width: 30%; */
-  max-width: 30rem;
+  width: 20rem;
+  /* max-width: 35rem; */
   background-color: rgb(253, 253, 253);
   padding: 1rem;
   height: 25rem;
   z-index: 2;
-  transition: 1s;
+  transition: 0.5s;
 }
 .modal.hidden,
 .custom_modal.hidden,
