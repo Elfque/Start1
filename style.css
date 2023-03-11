@@ -262,6 +262,13 @@ a {
   font-weight: 900;
   font-size: 1.4rem;
 }
+.cent {
+  text-align: center;
+  padding: 1rem 0;
+}
+.cent a {
+  animation: blink 1s infinite;
+}
 
 /* MEDIA */
 /* PROJECTS */
